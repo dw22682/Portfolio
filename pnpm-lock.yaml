@@ -19,10 +19,10 @@ importers:
         version: 19.0.0(react@19.0.0)
     devDependencies:
       '@types/node':
-        specifier: ^22
+        specifier: ^20
         version: 22.13.4
       '@types/react':
-        specifier: ^19.0.8
+        specifier: ^19
         version: 19.0.8
       '@types/react-dom':
         specifier: ^19
