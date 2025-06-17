@@ -8,13 +8,14 @@ const HeroSection = () => {
       <div className='grid grid-cols-1 sm:grid-cols-12'>
         <div className='col-span-7 place-self-center text-center sm:text-left'>
           <h1 className='lg:text-6xl text-4xl sm:text-5xl mb-4 font-extrabold px-10 sm:px-2'>
-            Josh Chatten Portfolio
+            <span className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-orange-400'>Josh Chatten </span>
+            Portfolio
           </h1>
           <p className='text-gray-100 mb-6 mr-6 text-lg lg:text-xl'>
             Hi, I'm Josh. Welcome to my portfolio website. Here you can find projects that i have worked on along with relevant information, skills and links.
           </p>
           <div>
-            <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-100 via-yellow-200 to-orange-400 text-black hover hover:from-blue-600 hover:via-teal-400 hover:to-blue-300'>
+            <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-100 via-yellow-200 to-orange-400 text-black hover hover:from-blue-100 hover:via-teal-300 hover:to-blue-500'>
               My Github
             </button>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-[#313131] border border-white text-white mt-6'>
