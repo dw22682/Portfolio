@@ -14,7 +14,7 @@ const HeroSection = () => {
             Hi, I'm Josh. Welcome to my portfolio website. Here you can find projects that i have worked on along with relevant information, skills and links.
           </p>
           <div>
-            <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-[#d2d2d2] text-black hover:bg-white'>
+            <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-100 via-yellow-200 to-orange-400 text-black hover hover:from-blue-600 hover:via-teal-400 hover:to-blue-300'>
               My Github
             </button>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-[#313131] border border-white text-white mt-6'>
