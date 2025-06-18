@@ -6,6 +6,8 @@ import {TypeAnimation} from 'react-type-animation'
 
 const HeroSection = () => {
   let x = 300;
+  //const BASE_URL = window.location.hostname === "localhost" ? '' : '/Portfolio';
+  const FRACTAL = window.location.hostname === "localhost" ? '/images/fractal.jpg' : '/Portfolio/images/fractal.jpg';
   return (
     <section>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
@@ -43,9 +45,9 @@ const HeroSection = () => {
         <div className='col-span-5 place-self-center mt-4 lg:mt-0 ml-8'>
           <div className='rounded-full bg-[#181818] w-[350px] h-[350px] sm:h-[270px] sm:w-[270px] lg:h-[450px] lg:w-[450px] relative'>
             <Image
-              src="/images/fractal.jpg"
+              src={FRACTAL}
               alt='profile image'
-              className='place-self-center h-[300px] w-[300px] sm:w-[200px] sm:h-[200px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+              className='place-self-center text-white h-[300px] w-[300px] sm:w-[200px] sm:h-[200px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
               width={x}
               height={x}
               />
