@@ -1,13 +1,23 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 import {TypeAnimation} from 'react-type-animation'
 
 const HeroSection = () => {
-  let x = 300;
-  //const BASE_URL = window.location.hostname === "localhost" ? '' : '/Portfolio';
-  const FRACTAL = window.location.hostname === "localhost" ? '/images/fractal.jpg' : '/Portfolio/images/fractal.jpg';
+  const [FRACTAL, setFractalURL] = useState('');
+
+  useEffect(() => {
+        const FRACTALL:string = window.location.hostname === "localhost" ? '/images/fractal.jpg' : '/Portfolio/images/fractal.jpg';
+        const fetchData = async () => {
+            const result:string = await new Promise(resolve => setTimeout(() => resolve(FRACTALL), 1000));
+            setFractalURL(result);
+        };
+
+        fetchData();
+        return () => {};
+    }, []);
+    let x = 300;
   return (
     <section>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
