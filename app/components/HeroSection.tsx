@@ -1,5 +1,8 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
+
+import {TypeAnimation} from 'react-type-animation'
 
 const HeroSection = () => {
   let x = 300;
@@ -11,15 +14,29 @@ const HeroSection = () => {
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-orange-400'>Josh Chatten </span>
             Portfolio
           </h1>
-          <p className='text-gray-100 mb-6 mr-6 text-lg lg:text-xl'>
+          <TypeAnimation
+            sequence={[
+              'Game Development',
+              1000,
+              'Software Development',
+              1000,
+              'Data Science',
+              1000
+            ]}
+            wrapper='span'
+            speed={50}
+            repeat={Infinity}
+            className='lg:text-5xl text-3xl sm:text-4xl font-bold mb-6 px-10 sm:px-2 text-amber-50'
+          />
+          <p className='text-gray-100 mb-6 mt-4 mr-6 text-lg lg:text-xl'>
             Hi, I'm Josh. Welcome to my portfolio website. Here you can find projects that i have worked on along with relevant information, skills and links.
           </p>
           <div>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-100 via-yellow-200 to-orange-400 text-black hover hover:from-blue-100 hover:via-teal-300 hover:to-blue-500'>
               My Github
             </button>
-            <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-[#313131] border border-white text-white mt-6'>
-              Download CV
+            <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-amber-100 via-yellow-200 to-orange-400 hover:from-blue-100 hover:via-teal-300 hover:to-blue-500 text-white mt-6'>
+              <span className='block bg-[#181818] hover:bg-[#313131] rounded-full px-5 py-2.5'>Download CV</span>
             </button>
           </div>
         </div>
