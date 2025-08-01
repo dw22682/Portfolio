@@ -5,7 +5,7 @@ import Image from 'next/image'
 import {TypeAnimation} from 'react-type-animation'
 
 const HeroSection = () => {
-  const [FRACTAL, setFractalURL] = useState('');
+  const [FRACTAL, setFractalURL] = useState('/Portfolio/images/fractal.jpg');
 
   useEffect(() => {
         const FRACTALL:string = window.location.hostname === "localhost" ? '/images/fractal.jpg' : '/Portfolio/images/fractal.jpg';
@@ -38,7 +38,7 @@ const HeroSection = () => {
             wrapper='span'
             speed={50}
             repeat={Infinity}
-            className='lg:text-5xl text-3xl sm:text-4xl font-bold mb-6 px-10 sm:px-2 text-amber-50'
+            className='lg:text-5xl text-3xl sm:text-3xl font-bold mb-6 px-10 sm:px-2 text-amber-50'
           />
           <p className='text-gray-100 mb-6 mt-4 mr-6 text-lg lg:text-xl'>
             Hi, I'm Josh. Welcome to my portfolio website. Here you can find projects that i have worked on along with relevant information, skills and links.
