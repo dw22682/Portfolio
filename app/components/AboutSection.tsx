@@ -1,0 +1,94 @@
+"use client";
+import React, { useTransition, useState, useEffect } from 'react'
+import Image from "next/image"
+import AboutTab from './AboutTab';
+
+const TAB_DATA = [
+    {
+        title: "Skills",
+        id: "skills",
+        content: (
+            <ul className='list-disc pl-6'>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Go</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Unity</li>
+                <li>git and Github</li>
+            </ul>
+        )
+    },
+    {
+        title: "Education",
+        id:"education",
+        content: (
+            <ul className='list-disc pl-6'>
+                <li>On track for a 1st class M-eng</li>
+                    in Computer Science from
+                    University of Bristol
+            </ul>
+        )
+    }
+];
+
+const AboutSection = () => {
+
+    const [FRACTAL, setFractalURL] = useState('/Portfolio/images/tmp_profile_portfolio.jpg');
+
+    useEffect(() => {
+        const FRACTALL:string = window.location.hostname === "localhost" ? '/images/tmp_profile_portfolio.jpg' : '/Portfolio/images/tmp_profile_portfolio.jpg';
+        const fetchData = async () => {
+            const result:string = await new Promise(resolve => setTimeout(() => resolve(FRACTALL), 1000));
+            setFractalURL(result);
+        };
+
+        fetchData();
+        return () => {};
+    }, []);
+
+    const [tab, setTab] = useState("skills");
+    const [isPending, startTransition] = useTransition();
+
+    const handleTabChange = (id: string) => {
+        startTransition(() => {
+            setTab(id);
+        });
+    }
+
+    return (
+    <section className='text-amber-50'>
+        <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+            <Image className='mt-4 md:mt-0' src={FRACTAL} alt={'Image of me'} width={500} height={500} />
+            <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
+                <h2 className='text-4xl font-bold text-amber-100 mb-4 mt-4'>
+                    About Me
+                </h2>
+                <p className='text-base md:text-lg text-white'>I am a Computer Science student at University of Bristol
+                    with a passion in Software Development and Game Design.
+                    I have experience working with many languages such as
+                    c, c++, java, python, Go as well as web development
+                    tech stacks such as React, Next.js, CSS and HTML.
+                    I also have experience making games with the Unity engine.
+                </p>
+                <div className='flex flex-row mt-8'>
+                    <AboutTab selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
+                        Skills
+                    </AboutTab>
+                    <AboutTab selectTab={() => handleTabChange("education")} active={tab === "education"}>
+                        Education
+                    </AboutTab>
+                </div>
+                <div className='mt-8'>
+                    {TAB_DATA.find((t: { id: string; }) => t.id === tab)?.content}
+                </div>
+            </div>
+        </div>
+    </section>
+  )
+}
+
+export default AboutSection
