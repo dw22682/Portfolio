@@ -37,12 +37,12 @@ const TAB_DATA = [
 
 const AboutSection = () => {
 
-    const [FRACTAL, setFractalURL] = useState('/Portfolio/images/tmp_profile_portfolio.jpg');
+    const [SRC, setFractalURL] = useState('/Portfolio/images/tmp_profile_portfolio.jpg');
 
     useEffect(() => {
-        const FRACTALL:string = window.location.hostname === "localhost" ? '/images/tmp_profile_portfolio.jpg' : '/Portfolio/images/tmp_profile_portfolio.jpg';
+        const SRCC:string = window.location.hostname === "localhost" ? '/images/tmp_profile_portfolio.jpg' : '/Portfolio/images/tmp_profile_portfolio.jpg';
         const fetchData = async () => {
-            const result:string = await new Promise(resolve => setTimeout(() => resolve(FRACTALL), 1000));
+            const result:string = await new Promise(resolve => setTimeout(() => resolve(SRCC), 1000));
             setFractalURL(result);
         };
 
@@ -62,7 +62,7 @@ const AboutSection = () => {
     return (
     <section className='text-amber-50'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-            <Image className='mt-4 md:mt-0' src={FRACTAL} alt={'Image of me'} width={500} height={500} />
+            <Image className='mt-4 md:mt-0' src={SRC} alt={'Image of me'} width={500} height={500} />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-amber-100 mb-4 mt-4'>
                     About Me
