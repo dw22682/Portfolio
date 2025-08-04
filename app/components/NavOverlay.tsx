@@ -13,7 +13,7 @@ type def = {
 const NavOverlay = ({navLinks}: def) => {
   return (
     <div>
-        <ul className='flex flex-col p-4 items-center text-2xl bg-[#131313]'>
+        <ul className='flex flex-col p-4 items-center text-2xl bg-[#131313]/80'>
             {
                 navLinks.map((link, index) => (
                     <li key={index}>
