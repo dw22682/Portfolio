@@ -8,7 +8,7 @@ const projectData = [
         id: 1,
         title: "Shifting Sands",
         description: "Best Video Game of ALL TIME!",
-        image: "/images/projects/seal_team7_group_photo.jpg",
+        image: "/Portfolio/images/projects/seal_team7_group_photo.jpg",
         tag: ["All", "Game"],
         gitUrl: "https://github.com/lm22433/2024-SealTeam7",
         previewUrl: "/"
@@ -17,7 +17,7 @@ const projectData = [
         id: 2,
         title: "Project 2",
         description: "Description of Project 2",
-        image: "/images/projects/seal_team7_group_photo.jpg",
+        image: "/Portfolio/images/projects/seal_team7_group_photo.jpg",
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/"
@@ -26,7 +26,7 @@ const projectData = [
         id: 3,
         title: "Project 3",
         description: "Description of Project 3",
-        image: "/images/projects/seal_team7_group_photo.jpg",
+        image: "/Portfolio/images/projects/seal_team7_group_photo.jpg",
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/"
