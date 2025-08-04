@@ -7,13 +7,26 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-gradient-to-tr from-[#131313] via-[#141414] to-yellow-600">
         <Navigation />
         <div className="container mx-auto px-10 py-4 mt-24">
-            <h1 className='text-center lg:text-6xl text-4xl sm:text-5xl mb-4 font-extrabold px-10 sm:px-2'>
-              <span className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-orange-400'>Shifting Sands </span>
-            </h1>
-            <h2 className='text-center lg:text-5xl text-3xl sm:text-4xl mb-4 font-bold px-10 sm:px-2'>
-              Worlds First AR game played with a Sandbox
-            </h2>
+          <div className='flex flex-row items-center justify-between'>
+            <div className='w-1/2'>
+              <h1 className='text-left lg:text-6xl text-4xl sm:text-5xl mb-4 font-extrabold px-10 sm:px-2'>
+                <span className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-orange-400'>Shifting Sands </span>
+              </h1>
+              <h2 className='text-left lg:text-5xl text-3xl sm:text-4xl mb-4 font-bold px-10 sm:px-2'>
+                Worlds First AR game played with a Sandbox
+              </h2>
+            </div>
             <div>
+              <Image 
+                  src="/Portfolio/images/ShiftingSands/Seal_Team_7_Logo.png"
+                  alt='logo image'
+                  className='mt-4 mb-4 ml-2 mr-2 text-white'
+                  width={300}
+                  height={300}
+                />
+            </div>
+          </div>
+          <div>
               <h3 className='text-4xl font-bold text-amber-100 mb-4 mt-4'>
                 Abstract
               </h3>
@@ -49,8 +62,8 @@ export default function Home() {
             <div className='grid md:grid-cols-3'>
               <div className='flex flex-col text-center mt-4 mb-4'>
                 <Image 
-                  src="/images/ShiftingSands/gd2.jpg"
-                  alt='profile image'
+                  src="/Portfolio/images/ShiftingSands/gd2.jpg"
+                  alt='games day image'
                   className='place-self-center mt-4 mb-4 ml-2 mr-2 text-white h-[300px] w-[300px] md:w-[350px] md:h-[350px]'
                   width={500}
                   height={500}
@@ -61,8 +74,8 @@ export default function Home() {
               </div>
               <div className='flex flex-col text-center mt-4 mb-4'>
                 <Image 
-                  src="/images/ShiftingSands/game_post_processing.png"
-                  alt='profile image'
+                  src="/Portfolio/images/ShiftingSands/game_post_processing.png"
+                  alt='in game image'
                   className='place-self-center mt-4 mb-4 ml-2 mr-2 text-white h-[300px] w-[300px] md:w-[350px] md:h-[350px]'
                   width={500}
                   height={500}
@@ -74,8 +87,8 @@ export default function Home() {
               </div>
               <div className='flex flex-col text-center mt-4 mb-4'>
                 <Image 
-                  src="/images/ShiftingSands/reconstructed-hand-game.png"
-                  alt='profile image'
+                  src="/Portfolio/images/ShiftingSands/reconstructed-hand-game.png"
+                  alt='hand image'
                   className='place-self-center mt-4 mb-4 ml-2 mr-2 text-white h-[300px] w-[300px] md:w-[350px] md:h-[350px]'
                   width={500}
                   height={500}
