@@ -11,7 +11,7 @@ const projectData = [
         image: "/Portfolio/images/projects/seal_team7_group_photo.jpg",
         tag: ["All", "Game"],
         gitUrl: "https://github.com/lm22433/2024-SealTeam7",
-        previewUrl: "/"
+        previewUrl: "/ProjectPages/ShiftingSands"
     },
     {
         id: 2,
