@@ -26,8 +26,8 @@ const Navigation = () => {
   const [barOpen, setBarOpen] = useState(false);
 
   return (
-    <nav className='fixed top-0 left-0 right-0 z-10 hover:bg-[#131313]'>
-      <div className={barOpen ? 'bg-[#131313]' : ''}>
+    <nav className='fixed top-0 left-0 right-0 z-10 hover:bg-[#131313]/80'>
+      <div className={barOpen ? 'bg-[#131313]/80' : ''}>
         <div className='flex flex-wrap items-center justify-between mx-auto p-4'>
             <Link href={"/"} className='text-2xl md:text-4xl text-white font-semibold hover:text-teal-200'>
                 HOME
