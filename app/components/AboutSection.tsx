@@ -2,6 +2,7 @@
 import React, { useTransition, useState, useEffect } from 'react'
 import Image from "next/image"
 import AboutTab from './AboutTab';
+import { title } from 'process';
 
 const TAB_DATA = [
     {
@@ -30,6 +31,16 @@ const TAB_DATA = [
                 <li>On track for a 1st class M-eng</li>
                     in Computer Science from
                     University of Bristol
+            </ul>
+        )
+    },
+    {
+        title: "Awards",
+        id: "awards",
+        content: (
+            <ul className='list-disc pl-6'>
+                <li>2024 BrisHack "Best Wearable Tech" Award *team of 5*</li>
+                <li>2024 UoB CSS GameJam "People's Choice" Award *team of 6*</li>
             </ul>
         )
     }
@@ -70,7 +81,7 @@ const AboutSection = () => {
                 <p className='text-base md:text-lg text-white'>I am a Computer Science student at University of Bristol
                     with a passion in Software Development and Game Design.
                     I have experience working with many languages such as
-                    c, c++, java, python, Go as well as web development
+                    C, C++, Java, Python, Go as well as web development
                     tech stacks such as React, Next.js, CSS and HTML.
                     I also have experience making games with the Unity engine.
                 </p>
@@ -80,6 +91,9 @@ const AboutSection = () => {
                     </AboutTab>
                     <AboutTab selectTab={() => handleTabChange("education")} active={tab === "education"}>
                         Education
+                    </AboutTab>
+                    <AboutTab selectTab={() => handleTabChange("awards")} active={tab === "awards"}>
+                        Awards
                     </AboutTab>
                 </div>
                 <div className='mt-8'>
