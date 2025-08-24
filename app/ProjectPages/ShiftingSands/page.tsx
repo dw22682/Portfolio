@@ -12,7 +12,7 @@ export default function Home() {
               <h1 className='text-left lg:text-6xl text-4xl sm:text-5xl mb-4 font-extrabold px-10 sm:px-2'>
                 <span className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-orange-400'>Shifting Sands </span>
               </h1>
-              <h2 className='text-left lg:text-5xl text-3xl sm:text-4xl mb-4 font-bold px-10 sm:px-2'>
+              <h2 className='text-white text-left lg:text-5xl text-3xl sm:text-4xl mb-4 font-bold px-10 sm:px-2'>
                 Worlds First AR game played with a Sandbox
               </h2>
             </div>
@@ -31,7 +31,7 @@ export default function Home() {
                 Abstract
               </h3>
               <div className='flex flex-row'>
-                <p className='w-1/2 mr-3 text-lg'>
+                <p className='w-1/2 mr-3 text-lg text-white'>
                   Shifting Sands is an augmented reality (AR) game that merges
                   the fun and exciting gameplay of tower defence games with the
                   nostalgic feeling of playing in a sandbox. This is bundled 
@@ -47,7 +47,7 @@ export default function Home() {
                   team members: me, Harry Greentree, Bhagavath Achani, Peter Lillistone,
                   Finn Cooper and Sergi Lange-Soler.
                 </p>
-                <p className='w-1/2 ml-3 text-lg'>
+                <p className='w-1/2 ml-3 text-lg text-white'>
                   The game's core concept sees you as the player take on the role of a godlike
                   figure in a large-scale battle. Your goal is to defend your central 'Godly
                   Core' from waves of different enemies by physically manipulating the sand to
@@ -59,7 +59,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className='grid md:grid-cols-3'>
+            <div className='grid md:grid-cols-3 text-white'>
               <div className='flex flex-col text-center mt-4 mb-4'>
                 <Image 
                   src="/Portfolio/images/ShiftingSands/gd2.jpg"
@@ -98,38 +98,64 @@ export default function Home() {
                 </p>
                 </div>
             </div>
-            <div className='grid md:grid-cols-2'>
+            <div className='grid md:grid-cols-3 text-white'>
               <div className='flex flex-col mr-2 ml-2 text-left items-center'>
                 <h3 className='text-4xl font-bold text-amber-100 mb-4 mt-4'>
                   Features
                 </h3>
                 <ul className='list-disc pl-6 text-lg'>
                   <li>
-                    real-time virtual topographic map
+                    Real-time virtual topographic map
                   </li>
                   <li>
-                    real-time hand tracking
+                    Real-time hand tracking
                   </li>
                   <li>
-                    over 10 unique enemy types
+                    Over 10 unique enemy types
                   </li>
                   <li>
-                    detailed physics enhancements
+                    Detailed physics enhancements
                   </li>
                   <li>                    
-                    custom toon shader
+                    Custom toon shader
                   </li>
                   <li>
-                    custom particle effects
+                    Custom particle effects
                   </li>
                   <li>
-                    secondary news feed
+                    Secondary news feed
                   </li>
                   <li>
-                    custom dynamic pathfinding AI
+                    Custom dynamic pathfinding AI
                   </li>
                   <li>
                     Leaderboard Website
+                  </li>
+                </ul>
+              </div>
+
+              <div className='flex flex-col mr-2 ml-2 text-left items-center'>
+                <h3 className='text-4xl font-bold text-amber-100 mb-4 mt-4'>
+                  Personal Contributions
+                </h3>
+                <ul className='list-disc pl-6 text-lg'>
+                  <li>
+                    Rigidbody physics interactions with dynamic terrain
+                  </li>
+                  <li>
+                    Enemy gameplay design
+                  </li>
+                  <li>
+                    Enemy types design and implementation
+                  </li>
+                  <li>
+                    Colour Scheme design
+                  </li>
+                  <li>                    
+                    Creation of unique 'Toon' style particle effects using Unity VFX graph
+                  </li>
+                  <li>
+                    Balance Testing
                   </li>
                 </ul>
               </div>
