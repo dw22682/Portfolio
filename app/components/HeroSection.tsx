@@ -22,7 +22,7 @@ const HeroSection = () => {
     <section>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
         <div className='col-span-7 place-self-center text-center sm:text-left'>
-          <h1 className='lg:text-6xl text-4xl sm:text-5xl mb-4 font-extrabold px-10 sm:px-2'>
+          <h1 className='text-white lg:text-6xl text-4xl sm:text-5xl mb-4 font-extrabold px-10 sm:px-2'>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-orange-400'>Josh Chatten </span>
             Portfolio
           </h1>
