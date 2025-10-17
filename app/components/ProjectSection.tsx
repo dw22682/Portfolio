@@ -17,7 +17,7 @@ const projectData = [
         id: 2,
         title: "BCADD (NHS)",
         description: "Breast Cancer Assessment and Decision Database",
-        image: "/Portfolio/images/projects/bcaddhome.jpg",
+        image: "/Portfolio/images/projects/bcaddhome.png",
         tag: ["All"],
         gitUrl: "https://dw22682.github.io/BcaddPilot/",
         previewUrl: "/ProjectPages/bcadd"
