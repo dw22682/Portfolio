@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import {TypeAnimation} from 'react-type-animation'
 
@@ -8,7 +9,7 @@ const HeroSection = () => {
   const [FRACTAL, setFractalURL] = useState('/Portfolio/images/fractal.jpg');
 
   useEffect(() => {
-        const FRACTALL:string = window.location.hostname === "localhost" ? '/images/fractal.jpg' : '/Portfolio/images/fractal.jpg';
+        const FRACTALL:string = window.location.hostname === "localhost" ? '/images/mugshot.jpg' : '/Portfolio/images/mugshot.jpg';
         const fetchData = async () => {
             const result:string = await new Promise(resolve => setTimeout(() => resolve(FRACTALL), 1000));
             setFractalURL(result);
@@ -17,7 +18,7 @@ const HeroSection = () => {
         fetchData();
         return () => {};
     }, []);
-    let x = 300;
+    let x = 500;
   return (
     <section>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
@@ -45,7 +46,9 @@ const HeroSection = () => {
           </p>
           <div>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-100 via-yellow-200 to-orange-400 text-black hover hover:from-blue-100 hover:via-teal-300 hover:to-blue-500'>
-              My Github
+              <Link href={"https://github.com/dw22682"}>
+                My Github
+              </Link>
             </button>
             <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-amber-100 via-yellow-200 to-orange-400 hover:from-blue-100 hover:via-teal-300 hover:to-blue-500 text-white mt-6'>
               <span className='block bg-[#181818] hover:bg-[#313131] rounded-full px-5 py-2.5'>Download CV</span>
@@ -57,7 +60,7 @@ const HeroSection = () => {
             <Image
               src={FRACTAL}
               alt='profile image'
-              className='place-self-center text-white h-[300px] w-[300px] sm:w-[200px] sm:h-[200px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+              className='place-self-center text-white h-[500px] w-[400px] sm:w-[200px] sm:h-[200px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
               width={x}
               height={x}
               />
