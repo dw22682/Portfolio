@@ -19,7 +19,7 @@ const TAB_DATA = [
                 <li>React</li>
                 <li>Next.js</li>
                 <li>Unity</li>
-                <li>git and Github</li>
+                <li>Git and Github</li>
             </ul>
         )
     },
@@ -51,7 +51,7 @@ const AboutSection = () => {
     const [SRC, setFractalURL] = useState('/Portfolio/images/tmp_profile_portfolio.jpg');
 
     useEffect(() => {
-        const SRCC:string = window.location.hostname === "localhost" ? '/images/tmp_profile_portfolio.jpg' : '/Portfolio/images/tmp_profile_portfolio.jpg';
+        const SRCC:string = window.location.hostname === "localhost" ? '/images/Projects/seal_team7_group_photo.jpg' : '/Portfolio/images/Projects/seal_team7_group_photo.jpg';
         const fetchData = async () => {
             const result:string = await new Promise(resolve => setTimeout(() => resolve(SRCC), 1000));
             setFractalURL(result);
@@ -71,19 +71,33 @@ const AboutSection = () => {
     }
 
     return (
-    <section className='text-amber-50'>
+    <section id={"about"} className='text-amber-50'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
             <Image className='mt-4 md:mt-0' src={SRC} alt={'Image of me'} width={500} height={500} />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-amber-100 mb-4 mt-4'>
                     About Me
                 </h2>
-                <p className='text-base md:text-lg text-white'>I am a Computer Science student at University of Bristol
+                <p className='text-base md:text-lg text-white mb-3'>
+                    I am a Computer Science student at University of Bristol
                     with a passion in Software Development and Game Design.
                     I have experience working with many languages such as
                     C, C++, Java, Python, Go as well as web development
                     tech stacks such as React, Next.js, CSS and HTML.
                     I also have experience making games with the Unity engine.
+                </p>
+                <p className='text-base md:text-lg text-white mt-3 mb-3'>
+                    Beyond computer science, I play tennis competitively both
+                    in university and for multiple clubs around Bristol and Gloucestershire.
+                    I also coach tennis at Frampton on Severn Tennis Club. I love video
+                    games, both competitive and casual.
+                </p>
+                <p className='text-base md:text-lg text-white mt-3'>
+                    I am a highly motivated and aspirational person. I pay attention to
+                    small details and am always searching for ways to improve myself,
+                    no matter what I am doing. My time as a coach has helped me learn
+                    key life skills such as communication and leadership and I hope to be
+                    able to bring those skills into any future work endeavours.
                 </p>
                 <div className='flex flex-row mt-8'>
                     <AboutTab selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
