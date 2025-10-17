@@ -18,7 +18,7 @@ const HeroSection = () => {
         fetchData();
         return () => {};
     }, []);
-    let x = 500;
+    let x = 300;
   return (
     <section>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
