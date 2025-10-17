@@ -20,7 +20,7 @@ const projectData = [
         image: "/Portfolio/images/projects/seal_team7_group_photo.jpg",
         tag: ["All"],
         gitUrl: "https://dw22682.github.io/BcaddPilot/",
-        previewUrl: "/"
+        previewUrl: "/ProjectPages/bcadd"
     },
     {
         id: 3,
@@ -43,40 +43,42 @@ const ProjectSection = () => {
     })
 
   return (
-    <div>
-        <h2 className='text-center text-4xl font-bold text-amber-100 mb-4 mt-4'>
-            My Projects
-        </h2>
-        <div className='text-amber-50 flex flex-row justify-center items-center gap-2 py-6'>
-            <ProjectTag
-               onClick={handleTagChange}
-                name='All'
-                isSelected={tag === "All"}
-            />
-            <ProjectTag
-               onClick={handleTagChange}
-                name='Game'
-                isSelected={tag === "Game"}
-            /> 
-            <ProjectTag
-               onClick={handleTagChange}
-                name='Web'
-                isSelected={tag === "Web"}
-            /> 
+    <section id={"projects"}>
+        <div>
+            <h2 className='text-center text-4xl font-bold text-amber-100 mb-4 mt-4'>
+                My Projects
+            </h2>
+            <div className='text-amber-50 flex flex-row justify-center items-center gap-2 py-6'>
+                <ProjectTag
+                onClick={handleTagChange}
+                    name='All'
+                    isSelected={tag === "All"}
+                />
+                <ProjectTag
+                onClick={handleTagChange}
+                    name='Game'
+                    isSelected={tag === "Game"}
+                /> 
+                <ProjectTag
+                onClick={handleTagChange}
+                    name='Web'
+                    isSelected={tag === "Web"}
+                /> 
+            </div>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6 lg:gap-12'>
+                {
+                    filteredData.map((project) =>(
+                    <ProjectCard key={project.id}
+                                title={project.title}
+                                description={project.description}
+                                imgURL={project.image}
+                                gitURL={project.gitUrl}
+                                previewURL={project.previewUrl} />
+                    ))
+                }
+            </div>
         </div>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6 lg:gap-12'>
-            {
-                filteredData.map((project) =>(
-                <ProjectCard key={project.id}
-                             title={project.title}
-                             description={project.description}
-                             imgURL={project.image}
-                             gitURL={project.gitUrl}
-                             previewURL={project.previewUrl} />
-                ))
-            }
-        </div>
-    </div>
+    </section>
   )
 }
 
