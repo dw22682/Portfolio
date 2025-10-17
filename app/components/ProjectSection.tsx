@@ -15,17 +15,17 @@ const projectData = [
     },
     {
         id: 2,
-        title: "Project 2",
-        description: "Description of Project 2",
+        title: "BCADD (NHS)",
+        description: "Breast Cancer Assessment and Decision Database",
         image: "/Portfolio/images/projects/seal_team7_group_photo.jpg",
-        tag: ["All", "Web"],
-        gitUrl: "/",
+        tag: ["All"],
+        gitUrl: "https://dw22682.github.io/BcaddPilot/",
         previewUrl: "/"
     },
     {
         id: 3,
-        title: "Project 3",
-        description: "Description of Project 3",
+        title: "Svelte Dashboard",
+        description: "WIP",
         image: "/Portfolio/images/projects/seal_team7_group_photo.jpg",
         tag: ["All", "Web"],
         gitUrl: "/",
