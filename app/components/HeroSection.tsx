@@ -6,7 +6,7 @@ import Link from 'next/link'
 import {TypeAnimation} from 'react-type-animation'
 
 const HeroSection = () => {
-  const [FRACTAL, setFractalURL] = useState('/Portfolio/images/fractal.jpg');
+  const [FRACTAL, setFractalURL] = useState('/Portfolio/images/mugshot.jpg');
 
   useEffect(() => {
         const FRACTALL:string = window.location.hostname === "localhost" ? '/images/mugshot.jpg' : '/Portfolio/images/mugshot.jpg';

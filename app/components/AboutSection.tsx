@@ -48,10 +48,10 @@ const TAB_DATA = [
 
 const AboutSection = () => {
 
-    const [SRC, setFractalURL] = useState('/Portfolio/images/tmp_profile_portfolio.jpg');
+    const [SRC, setFractalURL] = useState('/Portfolio/images/projects/seal_team7_group_photo.jpg');
 
     useEffect(() => {
-        const SRCC:string = window.location.hostname === "localhost" ? '/images/Projects/seal_team7_group_photo.jpg' : '/Portfolio/images/Projects/seal_team7_group_photo.jpg';
+        const SRCC:string = window.location.hostname === "localhost" ? '/images/projects/seal_team7_group_photo.jpg' : '/Portfolio/images/projects/seal_team7_group_photo.jpg';
         const fetchData = async () => {
             const result:string = await new Promise(resolve => setTimeout(() => resolve(SRCC), 1000));
             setFractalURL(result);
