@@ -24,12 +24,12 @@ const projectData = [
     },
     {
         id: 3,
-        title: "Svelte Dashboard",
-        description: "WIP",
-        image: "/Portfolio/images/projects/seal_team7_group_photo.jpg",
+        title: "Svelte Dashboard (WIP)",
+        description: "An interactive whiteboard webapp",
+        image: "/Portfolio/images/projects/whiteboard.png",
         tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/"
+        gitUrl: "https://github.com/dw22682/Svelte_Whiteboard",
+        previewUrl: "/ProjectPages/Whiteboard"
     }
 ]
 
