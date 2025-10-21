@@ -18,6 +18,8 @@ const TAB_DATA = [
                 <li>Go</li>
                 <li>React</li>
                 <li>Next.js</li>
+                <li>Svelte</li>
+                <li>Javascript / Typescript</li>
                 <li>Unity</li>
                 <li>Git and Github</li>
             </ul>
