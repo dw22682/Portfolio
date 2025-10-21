@@ -56,7 +56,7 @@ export default function Home() {
             <div className='grid md:grid-cols-3 text-white'>
               <div className='flex flex-col text-center mt-4 mb-4'>
                 <Image 
-                  src="/Portfolio/images/whiteboard/buttons.jpg"
+                  src="/Portfolio/images/whiteboard/buttons.png"
                   alt='games day image'
                   className='place-self-center mt-4 mb-4 ml-2 mr-2 text-white h-[300px] w-[300px] md:w-[350px] md:h-[350px]'
                   width={500}
