@@ -18,7 +18,7 @@ const HeroSection = () => {
         fetchData();
         return () => {};
     }, []);
-    let x = 300;
+    let x = 200;
   return (
     <section>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
@@ -60,7 +60,7 @@ const HeroSection = () => {
             <Image
               src={FRACTAL}
               alt='profile image'
-              className='place-self-center text-white h-[300px] w-[300px] sm:w-[200px] sm:h-[200px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+              className='place-self-center text-white absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
               width={x}
               height={x}
               />
