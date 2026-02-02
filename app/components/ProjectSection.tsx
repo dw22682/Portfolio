@@ -24,12 +24,21 @@ const projectData = [
     },
     {
         id: 3,
-        title: "Svelte Dashboard (WIP)",
+        title: "Svelte Dashboard",
         description: "An interactive whiteboard webapp",
         image: "/Portfolio/images/projects/whiteboard.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/dw22682/Svelte_Whiteboard",
         previewUrl: "/ProjectPages/Whiteboard"
+    },
+    {
+        id: 4,
+        title: "Ray Traced SDL Renderer",
+        description: "A ray traced renderer created for coursework written in pure c++",
+        image: "/Portfolio/images/projects/cornell_ray.png",
+        tag: ["All", "Other"],
+        gitUrl: "/ProjectPages/CGCoursework",
+        previewUrl: "/ProjectPages/CGCoursework"
     }
 ]
 
@@ -63,6 +72,11 @@ const ProjectSection = () => {
                 onClick={handleTagChange}
                     name='Web'
                     isSelected={tag === "Web"}
+                />
+                <ProjectTag
+                onClick={handleTagChange}
+                    name='Other'
+                    isSelected={tag === "Other"}
                 /> 
             </div>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6 lg:gap-12'>
